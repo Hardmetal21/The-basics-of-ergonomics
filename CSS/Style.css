@@ -58,13 +58,12 @@ body{
 }
 .main-content .text-block {
    /* border: 6px solid #9dadd7;*/
-    padding-top: 50px;
-    border-radius: 10px;
-    display: flex;
-    background-color: #ffffff;
-    order: 1;
-    flex-direction: column;
-    width: 900px;
+   border-radius: 10px;
+   display: flex;
+   background-color: #ffffff;
+   order: 1;
+   flex-direction: column;
+   width: 60%;
 }
 
 .main-content .nav {
