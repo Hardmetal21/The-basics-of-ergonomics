@@ -1,6 +1,7 @@
 .page{
     background-image: url(../IMG/Загальна%20директорія/фон%20для%20основної%20сторінки.jpg);
     background-size: cover;
+    background-position: center;
 }
 .pad{
     padding: 30px;
