@@ -1,0 +1,277 @@
+/**/
+body{
+    background:#bfc0c0;
+}
+/*Для шапки*/
+.main-head{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: -8px -8px 0px -10px;
+    padding: 0px 8px 0px 10px;
+    height: 200px;
+}
+.main-head .head1{
+    margin: 0px -8px 0px -8px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background:center/cover no-repeat  url("../IMG/фон.jpg");
+}
+
+.main-head .head2{
+    margin: 0px 0px 0px -10px;
+    display: flex;
+    width: -webkit-fill-available;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(18, 84, 28, 0.685);
+}
+.headText {
+    font-family: Calibri;
+    color: #ffffff;
+    font-size: 86px;
+    padding-left: 8px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+/*Основний контент*/
+.main-content {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    margin: 50px auto 50px auto;
+    min-height: 500px;
+}
+.main-content .left-block{
+    display: flex;
+    background-color: rgba(182, 182, 182, 0);
+    color: rgba(255,255,255,0);
+    order: 0;
+    flex-direction: column;
+    width: 20%;
+}
+.main-content .text-block {
+   /* border: 6px solid #9dadd7;*/
+    padding-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #ffffff;
+    order: 1;
+    flex-direction: column;
+    width: 900px;
+}
+
+.main-content .nav {
+    display: flex;
+    background-color: #819497;
+    order: 2;
+    flex-direction: column;
+    width: 225px;
+    height: fit-content;
+    margin-top: 100px;
+   /* border: 6px solid #9dadd7;*/
+    border-left: 0px;
+    border-radius: 0 10px 10px 0;
+    justify-content: center;
+}
+/*Оформлення блоків для основної сторінки*/
+.text-block .left-part {
+    display: flex;
+    order: 0;
+    flex-direction:column;
+    height: 100%;
+    border-right: 2px solid #d2b68a;
+    width: 50%;
+}
+.text-block .right-part {
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    height: 100%;
+    border-left: 2px solid #d2b68a;
+    width: 50%;
+}
+/* приклад вложеного меню */
+.nav-part{
+    width: 60%;
+    align-self: center;
+    border: 2px solid #847257;
+    padding: 10px 15px ;
+    border-radius: 20px;
+    background: #e2c8a0;
+}
+.nav-part .tab {
+    list-style-type: none;
+    background: #e2c8a0 ;
+    cursor:pointer;
+    padding: 4px 0px;
+    position: relative;
+    border-bottom: 1px solid #fdedd2;
+    transition-duration:1s;
+}
+.nav-part .tab:hover{
+    background: #fdedd2;
+}
+.tab .link {
+    text-decoration: none;
+    display: block;
+    margin: 0 10px;
+    padding: 5px 0px;
+    color: #571325;
+}
+.nav-part ul{
+    display: none;
+    padding-left: 0px;
+    position: absolute;
+    right: -60%;
+    top: 0;
+    width: 60%;
+    border: 2px solid #847257;
+    z-index: 1;
+}
+ul.sub-menu{
+    display: block;
+}
+/*Оформлення стилів тексту*/
+.text-block .text{
+    font-family: Calibri;
+    font-size: 24px;
+    color: #363636f5;
+    text-indent: 30px;
+    margin-top: -14px;
+    margin-bottom: 14px;
+    text-align: justify;
+    padding: 0 50px;
+}
+.text-block ol {
+    margin-top: 0;
+    padding: 0 50px 0 100px;
+}
+.text-block ol li{
+    font-family: Calibri;
+    color: #363636f5;
+    padding-right: 20px;
+    font-size: 24px;
+}
+.text-image{
+    text-align: center;
+    font-family: Calibri;
+    font-size: 18px;
+    margin-top: -14px;
+}
+.text-block .oglava{
+    font-family: Calibri;
+    color: #181818;
+    font-size: 28px;
+    padding-left: 8px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0 30px;
+}
+.text-block .sub-oglava
+{
+    font-family: Calibri;
+    color: #323131;
+    font-size: 26px;
+    padding-left: 8px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.text-block li{
+    font-family: Calibri;
+    padding-left: 8px;
+    font-size: 24px;
+}
+.text-block ul li {
+    font-family: Calibri;
+    padding-left: 8px;
+    font-size: 24px;
+    list-style: none;
+}
+.text-block a{
+    color:#363636f5;
+    text-decoration: none;
+}
+.bold-text{
+    font-weight: bold;
+}
+.italic-text{
+    font-style: italic;
+}
+.nav .avtor{
+    text-align: center;
+    color: #363636f5;
+    font-size: 26px;
+    margin: 10px;
+    font-weight: bolder;
+}
+.nav a{
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin: -2px 0 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    padding: 6.5px 0px;
+    color: rgba(232, 232, 232, 0.96);
+    font-size: 16px;
+    transition-duration: 1s;
+    border-top: 2px solid #69260A;
+    font-family: Calibri;
+}
+.nav a:hover{
+    background: #FDE8E2;
+    color: #69260A;
+}
+/*Для функції збільшення картинок*/
+.image {
+    cursor: pointer;
+    margin-top: -14px;
+    width: auto;
+    height: auto;
+    /*border: 2px solid #f7dc0e;*/
+    filter: drop-shadow(1px 2px 4px #3F0F1B);
+    max-width: 76%;
+}
+.image-center{
+    text-align: center;
+}
+.popup {
+    position: fixed;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_bg {
+    background:rgba(0,0,0,0.4);
+    position:absolute;
+    z-index:1;
+    height:100%;
+    width:100%;
+}
+.popup_img{
+    margin-bottom: 75px;
+    position: relative;
+    z-index:2;
+    max-height:85%;
+    max-width:70%;
+    border-radius: 40px;
+}
+footer{
+    margin:20px -8px -8px -8px;min-height: 70px;width: auto;background-color: #313335
+}
