@@ -7,7 +7,7 @@ body{
     display: flex;
     position: relative;
     flex-direction: column;
-    margin: -8px -8px 0px -10px;
+    margin: 0px 0px 0px -10px;
     padding: 0px 8px 0px 10px;
     height: 200px;
 }
@@ -272,5 +272,5 @@ ul.sub-menu{
     border-radius: 40px;
 }
 footer{
-    margin:20px -8px -8px -8px;min-height: 70px;width: auto;background-color: #313335
+   min-height: 70px;width: auto;background-color: #313335
 }
